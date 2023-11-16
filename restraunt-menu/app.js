@@ -34,7 +34,7 @@ const renderMenuBtns = () => {
 		let btn = `<button class="${customClass}">${capitalize(categories[i])}</button>`;
 		menuLabels.innerHTML += btn;
 	}
-	menuLabels.innerHTML += '<button class="cart">Cart (0)</button>';
+	menuLabels.innerHTML += '<button class="cart hoverStyle">Cart (0)</button>';
 
 	const buttons = menuLabels.querySelectorAll('.menu-label');
 	const cart = menuLabels.querySelector('.cart');
@@ -45,7 +45,11 @@ const renderMenuBtns = () => {
 
 	cart.addEventListener('click', (event) => {
 		menuContainer.innerHTML = '';
+		// menuLabels.innerHTML += '<button class="clearCart hoverStyle">Clear Cart</button>';
+		// menuLabels.innerHTML += '<button class="orderBtn hoverStyle">Order</button>';
+
 		menuContainer.innerHTML = `<div class="cart-container"></div>`;
+
 		renderCartMenuItems(cartMenuItems);
 	});
 };
