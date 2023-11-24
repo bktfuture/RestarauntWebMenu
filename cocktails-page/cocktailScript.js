@@ -6,6 +6,20 @@ const ulList = document.querySelector('.list');
 const clearBtn = document.querySelector('.clear');
 // const searchBtn = document.querySelector("#search-btn");
 
+const renderButtons = () => {
+	const filterBtn = new Set();
+
+	cocktails.forEach((cocktail) => {
+		if (!filterBtn.has(cocktail.strCategory)) {
+			filterBtn.add(cocktail.strCategory);
+			const btnF = document.createElement('li');
+			btnF.classList.add('list-item');
+			ulList.appendChild(btnF);
+			btnF.innerHTML = `${cocktail.strCategory}`;
+		}
+	});
+};
+
 const renderCocktails = () => {
 	cocktails.forEach((cocktail) => {
 		const cocktailDiv = document.createElement('div');
@@ -26,3 +40,4 @@ const renderCocktails = () => {
 	});
 };
 renderCocktails();
+renderButtons();

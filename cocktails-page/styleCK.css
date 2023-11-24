@@ -79,7 +79,7 @@ body {
 	list-style-type: none;
 	padding: 0 0 20px 0;
 	width: 90%;
-	margin: 10px auto;
+	margin: 30px auto;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -89,8 +89,9 @@ body {
 
 .list-item {
 	flex: 1;
-	border: 1px solid rgb(223, 221, 221);
+	border: 1px solid rgb(12, 12, 12);
 	padding: 10px;
+	background-color: aliceblue;
 }
 
 .main-content {
