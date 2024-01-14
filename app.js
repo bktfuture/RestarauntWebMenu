@@ -1,4 +1,4 @@
-import { data } from './datafile.js';
+import { data } from '/datafile.js';
 
 const menuLabels = document.querySelector('.menu-labels');
 const menuContainer = document.querySelector('.container');

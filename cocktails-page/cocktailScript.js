@@ -4,7 +4,9 @@ const main = document.querySelector('.main-content');
 const search = document.querySelector('#search');
 const ulList = document.querySelector('.list');
 const clearBtn = document.querySelector('.clear');
-// const searchBtn = document.querySelector("#search-btn");
+const radioYes = document.querySelector('#yes');
+const radioNo = document.querySelector('#no');
+const searchBtn = document.querySelector('#search-btn');
 
 const renderButtons = () => {
 	const filterBtn = new Set();
@@ -16,7 +18,10 @@ const renderButtons = () => {
 			btnF.classList.add('list-item');
 			ulList.appendChild(btnF);
 			btnF.innerHTML = `${cocktail.strCategory}`;
+
+			// btnF.addEventListener('click', renderFilteredCocktails());
 		}
+	
 	});
 };
 
