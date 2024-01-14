@@ -94,6 +94,9 @@ body {
 	background-color: aliceblue;
 }
 
+.search-option {
+	color: white;
+}
 .main-content {
 	display: flex;
 	flex-wrap: wrap;
